@@ -159,9 +159,23 @@ async function mergePdfs() {
     finalDownloadButton.onclick = function () {
         const cityName = document.getElementById("city-name").value;
         const nameSurname = document.getElementById("name-surname").value;
-        const birthDate = document.getElementById("birth-date").value;
+        let birthDate = document.getElementById("birth-date").value;
         const education = document.getElementById("education").value;
 
+        
+            // Change birthDate format to DD-MM-YYYY
+            const dateObj = new Date(birthDate);
+            const formattedBirthDate = `${String(dateObj.getDate()).padStart(2, '0')}-${String(dateObj.getMonth() + 1).padStart(2, '0')}-${dateObj.getFullYear()}`;
+        
+            // Create custom filename
+            const customFilename = `(${cityName}).${nameSurname}.(${formattedBirthDate}).${education}.PDF`;
+        
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = customFilename || "final_merged.pdf";
+            a.click();
+        };
+        
         const customFilename = `(${cityName}).${nameSurname}.(${birthDate}).${education}.PDF`;
 
 
@@ -170,4 +184,4 @@ async function mergePdfs() {
         a.download = customFilename || "final_merged.pdf";
         a.click();
     };
-}
+
