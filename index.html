@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Watermark and Merge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Upload PDF for Watermark</h2>
+        <input type="file" id="pdf-input" accept="application/pdf">
+        <select id="watermark-select">
+            <option value="Bhudev">Bhudev</option>
+            <option value="NRI">NRI</option>
+            <option value="Divorce">Divorce</option>
+            <option value="Saurashtra">Saurashtra</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Masters">Masters</option>
+            <option value="CACS">CACS</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Govjob">GovJob</option>
+            <option value="40plus">40plus</option>
+            <option value="1012">1012</option>
+            <option value="SG">SG</option>
+            <option value="NG">NG</option>
+        </select>
+        <button onclick="addWatermark()">Add Watermark</button>
+        <br>
+
+        <h2>Upload PDF to Merge</h2>
+        <input type="file" id="merge-pdf-input" accept="application/pdf">
+        <button id="merge-btn" onclick="mergePdfs()" style="display:none;">Merge PDFs</button>
+        
+        <br>
+
+        <h2>Enter Custom File Name</h2>
+        <div class="custom"></div>
+        <input type="text" id="city-name" placeholder="Enter City Name" required  />
+        <input type="text" id="name-surname" placeholder="Enter Name & Surname" required  />
+        <input type="date" id="birth-date" placeholder="Enter Birth Date" required />
+        <input type="text" id="education" placeholder="Enter Education" required/>
+        </div>
+        <button id="final-download-btn" style="display:none;" onclick="promptDownload()">Download Merged PDF</button>
+    </div>
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.16.0/pdf-lib.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

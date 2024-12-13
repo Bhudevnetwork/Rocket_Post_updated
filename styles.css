@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+
+input[type="file"], select {
+  margin: 10px 0;
+}
+
+
+
+
+.button-container {
+  margin-top: 20px;
+ 
+}
+
+
+
+
+/* General -------------------------------------------------------------------------- styling */
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin-left: 300px;
+  padding: 0 0 0 300;
+  height: 100vh;
+  width: 50%;
+  background-color: #bba3da;
+ 
+}
+
+
+h1 {
+  color: #4A148C; /* Purple color for the header */
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+
+/* Container for the form */
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  max-width: 400px; /* Limit the width of the container */
+}
+
+
+/* File input styling */
+input[type="file"] {
+  display: block;
+  width: 76%;
+  padding: 10px;
+  margin: 10px 20px 10px 67px;
+  background-color: #f1f1f1;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+input[type="file"]:hover {
+  border-color: #4A148C; /* Purple border on hover */
+}
+
+/* Dropdown styling */
+
+/* Dropdown styling */
+select {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f1f1f1;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+select:hover {
+  border-color: #4A148C; /* Purple border on hover */
+}
+
+
+/* Label styling */
+label {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 6px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/*-----------------------------text Box at bottom----------------*/
+
+#city-name, #name-surname, #birth-date, #education {
+  width:80%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+#city-name:focus, #name-surname:focus, #birth-date:focus, #education:focus {
+  border-color: #4A148C;/* Change border to green on focus */
+  background-color: #fff;      /* Change background to white */
+  outline: none;               /* Remove the default focus outline */
+}
+
+/*-----------------------------text Box at bottom--------------------------------*/
+
+.custom {
+  display: flex;
+  flex-wrap: wrap; /* Allow the items to wrap to the next line */
+  gap: 10px; /* Add space between items */
+}
+#city-name, #name-surname, #birth-date, #education {
+  width: 40%; /* Adjust the width to fit two inputs per line */
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+/*-----------------------------text Box at bottom-----------------------------------*/
+
+
+
+/* Optional button styling (for action) */
+button {
+  background-color: #4A148C;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 80%;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+  background-color: #8e24aa;
+}
