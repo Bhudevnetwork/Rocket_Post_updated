@@ -68,10 +68,58 @@ async function addWatermark() {
         color = [0.612, 0.141, 0.690]; // Dark red
     } else if (watermarkType === "SG") {
         watermarkText = "SG.BhudevNetworkVivah.com";
-        color = [0.106, 0.737, 0.612]; // Dark red
+        color = [0.612, 0.153, 0.690]; // Dark red
     } else if (watermarkType === "NG") {
         watermarkText = "NG.BhudevNetworkVivah.com";
         color = [0.612, 0.141, 0.690]; // Dark red
+    }
+    else if (watermarkType === "Canada") {
+        watermarkText = "canada.bhudevnetworkvivah.com";
+        color = [0.612, 0.141, 0.690]; // Dark red
+    }
+    else if (watermarkType === "USA") {
+        watermarkText = "USA.BhudevNetworkVivah.com";
+        color = [0.5, 0, 0.5]; // Dark red
+    }
+    else if (watermarkType === "AUS") {
+        watermarkText = "AUS-NZ.BhudevNetworkVivah.com";
+        color = [0.5, 0, 0.5]; // Dark red
+    }
+    else if (watermarkType === "Europe") {
+        watermarkText = "Europe.BhudevNetworkVivah.com";
+        color = [0.5, 0, 0.5]; // Dark red
+    }
+    else if (watermarkType === "Mumbai") {
+        watermarkText = "Mumbai.BhudevNetworkVivah.com";
+        color = [0.612, 0.141, 0.690]; // Dark red
+    }
+    else if (watermarkType === "Amdavad") {
+        watermarkText = "Amdavad.BhudevNetworkVivah.com";
+        color = [0.612, 0.141, 0.690]; // Dark red
+    }
+    else if (watermarkType === "Vadodara") {
+        watermarkText = "Vadodara.BhudevNetworkVivah.com";
+        color = [0.612, 0.141, 0.690]; // Dark red
+    }
+    else if (watermarkType === "Surat") {
+        watermarkText = "Surat.BhudevNetworkVivah.com";
+        color = [0.612, 0.141, 0.690]; // Dark red
+    }
+    else if (watermarkType === "Rajkot") {
+        watermarkText = "Rajkot.BhudevNetworkVivah.com";
+        color = [0.612, 0.141, 0.690]; // Dark red
+    }
+    else if (watermarkType === "Pune") {
+        watermarkText = "Pune.BhudevNetworkVivah.com";
+        color = [0.012, 0.663, 0.957]; // Dark red
+    }
+    else if (watermarkType === "Gandhinagar") {
+        watermarkText = "Gandhinagar.bhudevnetworkvivah.com";
+        color = [0.612, 0.141, 0.690]; // Dark red
+    }
+    else if (watermarkType === "Anand") {
+        watermarkText = "Anand.BhudevNetworkVivah.com";
+        color = [0.012, 0.663, 0.957]; // Dark red
     }
 
     const font = await pdfDoc.embedFont(PDFLib.StandardFonts.Helvetica);
@@ -176,6 +224,8 @@ async function mergePdfs() {
             a.click();
         };
         
+
+
         const customFilename = `(${cityName}).${nameSurname}.(${birthDate}).${education}.PDF`;
 
 
@@ -184,4 +234,8 @@ async function mergePdfs() {
         a.download = customFilename || "final_merged.pdf";
         a.click();
     };
+
+    document.getElementById("refresh-btn").addEventListener("click", function () {
+        location.reload();
+    });
 
