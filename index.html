@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+   
+    <button id="refresh-btn" title="Refresh">
+        &#x21bb; <!-- Unicode for refresh/reload icon -->
+    </button>
     <div class="form-container">
         <h2>Upload PDF for Watermark</h2>
         <input type="file" id="pdf-input" accept="application/pdf">
@@ -25,6 +28,18 @@
             <option value="1012">1012</option>
             <option value="SG">SG</option>
             <option value="NG">NG</option>
+            <option value="Canada">Canada</option>
+            <option value="USA">USA</option>
+            <option value="Aus">Aus-NZ</option>
+            <option value="Europe">Europe</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Amdavad">Amdavad</option>
+            <option value="Vadodara">Vadodara</option>
+            <option value="Surat">Surat</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Pune">Pune</option>
+            <option value="Gandhinagar">Gandhinagar</option>
+            <option value="Anand">Anand</option>
         </select>
         <button onclick="addWatermark()">Add Watermark</button>
         <br>
@@ -44,8 +59,8 @@
         </div>
         <button id="final-download-btn" style="display:none;" onclick="promptDownload()">Download Merged PDF</button>
     </div>
-    
 
+  
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.16.0/pdf-lib.min.js"></script>
     <script src="script.js"></script>
