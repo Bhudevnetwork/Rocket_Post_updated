@@ -12,6 +12,11 @@ async function loadPdf(file) {
     fileReader.readAsArrayBuffer(file);
 }
 
+// this is the script for Converting any file to PDf
+
+
+//------------------------------------------------------------------------------------------
+
 document.getElementById("pdf-input").addEventListener("change", (event) => {
     const file = event.target.files[0];
     if (file && file.type === "application/pdf") {
