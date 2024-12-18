@@ -160,6 +160,12 @@ label {
 
 
 
+.blinking {
+ 
+  color: #4A148C; /* Optional: color for the text */
+}
+
+
 /* Optional button styling (for action) */
 button {
   background-color: #4A148C;
@@ -178,3 +184,5 @@ button {
 button:hover {
   background-color: #8e24aa;
 }
+
+
