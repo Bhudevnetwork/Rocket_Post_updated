@@ -11,9 +11,13 @@
     <button id="refresh-btn" title="Refresh">
         &#x21bb; <!-- Unicode for refresh/reload icon -->
     </button>
+
+   
+    
     <div class="form-container">
-        <h2>Upload PDF for Watermark</h2>
+        <h2> <span class="blinking"> Step - 1 </span>  Upload PDF for Watermark</h2>
         <input type="file" id="pdf-input" accept="application/pdf">
+        <h2> <span class="blinking"> Step - 2</span> Select Watermark</h2>
         <select id="watermark-select">
             <option value="Bhudev">Bhudev</option>
             <option value="NRI">NRI</option>
@@ -44,13 +48,13 @@
         <button onclick="addWatermark()">Add Watermark</button>
         <br>
 
-        <h2>Upload PDF to Merge</h2>
+        <h2> <span class="blinking"> Step - 3 </span> Upload PDF to Merge</h2>
         <input type="file" id="merge-pdf-input" accept="application/pdf">
         <button id="merge-btn" onclick="mergePdfs()" style="display:none;">Merge PDFs</button>
         
         <br>
 
-        <h2>Enter Custom File Name</h2>
+        <h2><span class="blinking"> Step - 4 </span> Enter Custom File Name</h2>
         <div class="custom"></div>
         <input type="text" id="city-name" placeholder="Enter City Name" required  />
         <input type="text" id="name-surname" placeholder="Enter Name & Surname" required  />
